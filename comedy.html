@@ -5,13 +5,17 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
   <title>Filmed</title>
+  <script src="js/data.js" charset="utf-8"></script>
 </head>
 
 <body>
   <header>
     <section class="header">
-      <a class="mainLogoLink" href="index.html"><h1 class="mainLogo">Filmed.</h1></a>
+      <div class="mainLogoLink">
+        <a class="mainTitle" href="index.html"><span class="boldTitle">F</span>ILM<span class="colorTitle">ED</span></a>
+      </div>
       <div class="member">
         <a class="accountLink" href="#">Account</a>
         <a href="#">Subscribe</a>
@@ -19,6 +23,28 @@
     </div>
   </header>
 
+  <div class="filmsContainer">
+
+  </div>
+
+  <script>
+    var films = document.querySelector('.filmsContainer');
+    for (let index = 0; index < data.films.length; index++) {
+      var box = document.createElement('div');
+      box.classList.add('box');
+      box.innerHTML += '<div class="boxDesc">' + '<h4 class="boxTitle">' + data.films[index].title + '</h4>' + '<p class="boxText">' + data.films[index].duration + '</p>' + '</div>';
+      var img = document.createElement('img');
+      img.src = data.films[index].img
+      img.classList.add('img');
+      box.appendChild(img);
+      films.appendChild(box);
+      if (data.films[index].category === 'Comedy') {
+        box.style.display = 'block';
+      } else {
+        box.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>

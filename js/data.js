@@ -3,7 +3,7 @@ var data = {
     max_rating: 5,
     films: [{
         src: 'TIE+Fighter+-+short+film(720p).mp4',
-        title: 'TIE Fighter - short film',
+        title: 'TIE Fighter',
         duration: '7:27',
         author: 'OtaKing77077',
         author_url: 'https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g',
@@ -12,10 +12,11 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Animation'
+        category: 'Animation',
+        img: 'img/animation/thefighter.jpg'
     }, {
         src: 'Naruto+Live+Action+(avec+Florian+Nguyen+et+Aziatomik)(720p).mp4',
-        title: 'Naruto Live Action (avec Florian Nguyen et Aziatomik)',
+        title: 'Naruto Live Action',
         duration: '1:47',
         author: 'Brice Duan',
         author_url: 'https://www.youtube.com/channel/UCYF-3u_Jh5lWzPG2gRDD3-Q',
@@ -24,7 +25,8 @@ var data = {
         audio_language: 'Français',
         sub_language: 'N/A',
         rating: 3,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/narutoliveaction.jpg'
     }, {
         src: 'Dragon+Ball+vs+Naruto.+Anime+fight.(720p).mp4',
         title: 'Dragon Ball vs Naruto. Anime fight',
@@ -36,10 +38,11 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 5,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/narutovsdbz.jpg'
     }, {
         src: 'Naruto+Shippuden_+Dance+of+War+-+Short+Film+(Turn+On+Subtitles)(1080p).mp4',
-        title: 'Naruto Shippuden: Dance of War - Short Film',
+        title: 'Naruto Shippuden: Dance of War',
         duration: '7:48',
         author: 'RivenX3i',
         author_url: 'https://www.youtube.com/channel/UC-Op8pOVwbeqp6lyL2xJvqQ',
@@ -48,7 +51,8 @@ var data = {
         audio_language: 'Japonais',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/narutodanceofwar.jpg'
     }, {
         src: 'NARUTO+-+New+Movie+2018+-+Full+Trailer+AMAZING!!(720p).mp4',
         title: 'NARUTO - New Movie 2018',
@@ -60,10 +64,11 @@ var data = {
         audio_language: 'Japonais',
         sub_language: 'N/A',
         rating: 3,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/narutonewfilm.jpg'
     }, {
         src: 'Naruto+The+Movie!+(Official+Fake+Trailer)(720p).mp4',
-        title: 'Naruto The Movie! (Official Fake Trailer)',
+        title: 'Naruto The Movie!',
         duration: '3:15',
         author: 'nigahiga',
         author_url: 'https://www.youtube.com/channel/UCSAUGyc_xA8uYzaIVG6MESQ',
@@ -72,7 +77,8 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 3,
-        category: 'Comedy'
+        category: 'Comedy',
+        img: 'img/comedy/narutothemovie.jpg'
     }, {
         src: 'Red+Hood_+The+Fallen+-+DC+Comic+Batman+Fan+Film(720p).mp4',
         title: 'Red Hood: The Fallen - DC Comic Batman Fan Film',
@@ -84,10 +90,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 5,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/redhoodthefallen.jpg'
     }, {
         src: 'JUSTICE+LEAGUE_+Trinity+Force+_+DC+FAN+FILM+_(720p).mp4',
-        title: 'JUSTICE LEAGUE: Trinity Force | DC FAN FILM |',
+        title: 'JUSTICE LEAGUE: Trinity Force',
         duration: '16:29',
         author: 'SHIELDS Productions',
         author_url: 'https://www.youtube.com/channel/UCaz9yZYvDvbG_mgPhcCn4pw',
@@ -96,10 +103,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 2.5,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/justiceleaguetrinityforce.jpg'
     }, {
         src: 'The+Mad+Hatter+-+Fan+Film(720p).mp4',
-        title: 'The Mad Hatter - Fan Film',
+        title: 'The Mad Hatter',
         duration: '6:16',
         author: 'Wolfspider Productions',
         author_url: 'https://www.youtube.com/channel/UC_BAlJSUbpqzSjNX8on3Rgw',
@@ -108,10 +116,11 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 2,
-        category: 'Horror / Thriller'
+        category: 'Horror',
+        img: 'img/horror/themadhater.jpg'
     }, {
         src: 'The+Flash+Lite+(comedy+fan+film)(720p).mp4',
-        title: 'The Flash Lite (comedy fan film)',
+        title: 'The Flash Lite',
         duration: '10:14',
         author: 'The Chublin Brothers',
         author_url: 'https://www.youtube.com/channel/UCPFmTZlrfUkRCjGgSLtqx1g',
@@ -120,10 +129,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Comedy'
+        category: 'Comedy',
+        img: 'img/comedy/theflashlite.jpg'
     }, {
         src: 'Clash+at+the+Cantina+(2014)+-+Star+Wars+Fan+Film(720p).mp4',
-        title: 'Clash at the Cantina (2014) - Star Wars Fan Film',
+        title: 'Clash at the Cantina - Star Wars Fan Film',
         duration: '4:45',
         author: 'Corey Vidal',
         author_url: 'https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g',
@@ -132,10 +142,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Comedy'
+        category: 'Comedy',
+        img: 'img/comedy/clashatthecantina.jpg'
     }, {
         src: 'THE+74th+HUNGER+GAMES+(SHORT+COMEDY+FAN+FILM)(720p).mp4',
-        title: 'THE 74th HUNGER GAMES (SHORT COMEDY FAN FILM)',
+        title: 'THE 74th HUNGER GAMES',
         duration: '4:24',
         author: 'ChickenFeetFilms',
         author_url: 'https://www.youtube.com/channel/UC9nzWgRq-cQcakkzZq1XZvg',
@@ -144,7 +155,8 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 2,
-        category: 'Comedy'
+        category: 'Comedy',
+        img: 'img/comedy/the74hungergames.jpg'
     }, {
         src: 'VICTIM+-+A+Short+Slender+Man+Horror+Film(720p).mp4',
         title: 'VICTIM - A Short Slender Man Horror Film',
@@ -156,7 +168,8 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Horror / Thriller'
+        category: 'Horror',
+        img: 'img/horror/victim.jpg'
     }, {
         src: 'DON&#039;T+MOVE+-+A+Short+Horror+Film+(2017)(720p).mp4',
         title: 'FALLOUT - Apocalyptic Thriller Short Film',
@@ -168,7 +181,8 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 3,
-        category: 'Horror / Thriller'
+        category: 'Horror',
+        img: 'img/horror/dontmoove.jpg'
     }, {
         src: 'Dragon+Ball+Z_+Light+of+Hope+-+Pilot(720p).mp4',
         title: 'Dragon Ball Z: Light of Hope - Pilot',
@@ -180,10 +194,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/dbzlightofhope.jpg'
     }, {
         src: 'Attack+on+Titan+-+LEVI+vs+BEAST+TITAN+-+Fan+made+animation+-+Shingeki+no+kyojin+manga+chapter+81(480p).mp4',
-        title: 'Attack on Titan - LEVI vs BEAST TITAN - Fan made animation',
+        title: 'Attack on Titan - LEVI vs BEAST TITAN',
         duration: '1:14',
         author: 'S.L.H Animation',
         author_url: 'https://www.youtube.com/channel/UCE6CEl3ZoiDLUhawFG5xn1g',
@@ -192,10 +207,11 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Animation'
+        category: 'Animation',
+        img: 'img/animation/Attackontitan.jpg'
     }, {
         src: 'Chinese+teenager+created+awesome+fight+scene+animation(536p).mp4',
-        title: 'Personal Animated Short 【Heat vs Repulsion】自主制作アニメ',
+        title: 'Personal Animated Short 【Heat vs Repulsion】',
         duration: '3:50',
         author: 'magnil',
         author_url: 'https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g',
@@ -204,10 +220,11 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 5,
-        category: 'Animation'
+        category: 'Animation',
+        img: 'img/animation/chineseteenager.jpg'
     }, {
         src: 'SPAWN_+THE+RECALL+-+FAN+FILM(720p).mp4',
-        title: 'SPAWN: THE RECALL - FAN FILM',
+        title: 'SPAWN: THE RECALL',
         duration: '7:56',
         author: 'Irissee',
         author_url: 'https://www.youtube.com/channel/UCefxt5RuoiBlanGXmh4vg_A',
@@ -216,10 +233,11 @@ var data = {
         audio_language: 'Anglais',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Horror / Thriller'
+        category: 'Horror',
+        img: 'img/horror/spawntherecall.jpg'
     }, {
         src: '[Rebeler]+Madara+VS+Hashirama+-+Cosplay+Movie(720p).mp4',
-        title: '[Rebeler] Madara VS Hashirama - Cosplay Movie',
+        title: 'Madara VS Hashirama',
         duration: '8:06',
         author: 'Rebeler Team',
         author_url: 'https://www.youtube.com/channel/UCSDJAB-afLRrbytxQuq-lAg',
@@ -228,6 +246,7 @@ var data = {
         audio_language: 'N/A',
         sub_language: 'N/A',
         rating: 4,
-        category: 'Action'
+        category: 'Action',
+        img: 'img/action/madara.jpg'
     }, ]
 };
