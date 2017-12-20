@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'advent_prolight';
+  src: url('adventpro-light.ttf') format('truetype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'advent_probold';
+  src: url('adventpro-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'AllerDisplay';
+  src: url('AllerDisplay.ttf') format('truetype');
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #0b0b0b;
+  width: 100%;
+  height: 82px;
+  position: fixed;
+  z-index: 99;
+}
+
+.mainLogoLink {
+  width: 50%;
+  padding-left: 50px;
+  font-size: 50px;
+  color: white;
+  font-family: 'advent_probold';
+}
+
+.member {
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+  font-family: 'advent_prolight';
+  color: white;
+  font-size: 30px;
+}
+
+.accountLink {
+  margin-right: 20px;
+}
+
+.categoryContainer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding-top: 82px;
+}
+
+.categoryTitle {
+  font-family: 'advent_probold';
+  color: white;
+  font-size: 100px;
+  writing-mode: tb-rl;
+  margin: auto;
+  z-index: 98;
+}
+
+.mainTitle {
+  font-family: 'advent_prolight';
+}
+
+.boldTitle {
+  font-family: 'AllerDisplay';
+}
+
+.colorTitle {
+  color: #3DB39E;
+}
+
+.animationContainer {
+  background-image: url('../img/animation.jpg');
+  width: 100%;
+  background-size: cover;
+  display: flex;
+}
+
+.horrorContainer {
+  background-image: url('../img/horror.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+}
+
+.actionContainer {
+  background-image: url('../img/action.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+}
+
+.comedyContainer {
+  background-image: url('../img/comedy.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+}
+
+.categoryLinkAnimation {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkHorror {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkAction {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkComedy {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.opacityHoverAnimation {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+  transition: all 1s;
+}
+
+.opacityHoverHorror {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+  transition: all 1s;
+}
+
+.opacityHoverAction {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+  transition: all 1s;
+}
+
+.opacityHoverComedy {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+  transition: all 1s;
+}
+
+.opacityHoverAnimation:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.8;
+}
+
+.opacityHoverHorror:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.8;
+}
+
+.opacityHoverAction:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.8;
+}
+
+.opacityHoverComedy:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.8;
+}
