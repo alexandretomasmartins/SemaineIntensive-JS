@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'advent_prolight';
+  src: url('adventpro-light.ttf') format('truetype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'advent_probold';
+  src: url('adventpro-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'AllerDisplay';
+  src: url('AllerDisplay.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  background: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #111111;
+  width: 100%;
+  height: 82px;
+  z-index: 99;
+  color: #3DB39E;
+  border-bottom: 2px solid;
+  position: fixed;
+}
+
+.mainLogoLink {
+  width: 50%;
+  padding-left: 63px;
+  font-size: 50px;
+  color: white;
+  font-family: 'advent_probold';
+}
+
+.member {
+  width: 50%;
+  text-align: right;
+  padding-right: 63px;
+  font-family: 'advent_prolight';
+  color: white;
+  font-size: 30px;
+}
+
+.accountLink {
+  margin-right: 20px;
+}
+
+.accountLink:hover {
+  color: #3DB39E;
+}
+
+.categoryContainer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.categoryTitle {
+  font-family: 'advent_probold';
+  color: white;
+  font-size: 100px;
+  writing-mode: tb-rl;
+  margin: auto;
+  z-index: 98;
+}
+
+.mainTitle {
+  font-family: 'advent_prolight';
+}
+
+.boldTitle {
+  font-family: 'advent_probold';
+}
+
+.colorTitle {
+  color: #3DB39E;
+}
+
+.animationContainer {
+  background-image: url('../img/animation.jpg');
+  width: 100%;
+  background-size: cover;
+  display: flex;
+}
+
+.horrorContainer {
+  background-image: url('../img/horror.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+}
+
+.actionContainer {
+  background-image: url('../img/action.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+}
+
+.comedyContainer {
+  background-image: url('../img/comedy.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+}
+
+.categoryLinkAnimation {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkHorror {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkAction {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.categoryLinkComedy {
+  width: 100%;
+  background-size: cover;
+  height: 718px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.opacityHoverAnimation, .opacityHoverHorror, .opacityHoverAction, .opacityHoverComedy {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+  transition: all 1s;
+}
+
+.opacityHoverAnimation:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.opacityHoverHorror:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.opacityHoverAction:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.opacityHoverComedy:hover {
+  position: relative;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.box {
+  width: 40%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 46px;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.img:hover {
+  opacity: 0.7;
+}
+
+.filmsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.boxTitle {
+  color: white;
+  font-family: 'advent_prolight';
+  font-size: 20px;
+}
+
+.boxText {
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'AllerDisplay';
+  font-size: 20px;
+  color: #3DB39E;
+}
+
+.boxDesc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterTextHorror {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextAll {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+}
+
+.filterTextAnimation {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextAction {
+  margin-left: 10px;
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+}
+
+.filterTextComedy {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextSelected {
+  color: #3DB39E;
+  width: 75px;
+  font-family: 'advent_prolight';
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 63px;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.subLink {
+  color: white;
+}
+
+.subLink:hover {
+  color: #3DB39E;
+}
+
+.footerText {
+  font-family: 'advent_prolight';
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+  font-size: 20px;
+}
