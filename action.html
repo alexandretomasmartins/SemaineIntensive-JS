@@ -34,11 +34,18 @@
   <div class="filmsContainer">
   </div>
 
+  <div class="modal hidden">
+    <div class="modal_overlay"></div>
+      <div class="modal_content">
+      </div>
+  </div>
+
   <footer>
     <p class="footerText">made with <span class="heart">&hearts;</span> by group 19</p>
   </footer>
 
   <script>
+
     var films = document.querySelector('.filmsContainer');
     for (let index = 0; index < data.films.length; index++) {
       var box = document.createElement('div');
@@ -128,7 +135,164 @@
       comedy.style.color = "#3DB39E";
       all.style.color = "white";
   });
+  //MODAL
+
+var azerty = document.querySelectorAll('.box');
+var tmpfilm = {};
+var box = document.querySelectorAll('.box');
+var modal = document.querySelector('.modal');
+var overlay = document.querySelector('.modal_overlay');
+var modalcontent = document.querySelector('.modal_content');
+for (let b = 0; b < azerty.length; b++) {
+    azerty[b].addEventListener('click', function (event){
+      for (var v = 0; v < data.films.length; v++) {
+        if (event.target.attributes[0].value === data.films[v].img) {
+          tmpfilm = data.films[v]
+          console.log(data.films[v].src);
+          modalcontent.innerHTML = '<div class="playerContainer"><video class="video" src="./videos/' + data.films[v].src + '"></video><div class="barPlayer"><input type="range" class="inputTime"><div class="barPlayer-Fils"><div class="play-button"></div><div class="play-pause"></div><div class="stop-button"></div><input class="video__slider" type="range" min="0" max="100" step="0.01" value="100" /><p class="timer"></p><img class="fullScreen" src="img/fullscreen.png" /></div></div></div><div class="descriptionText">' + data.films[v].title + data.films[v].duration + data.films[v].author + data.films[v].year + data.films[v].audio_language + data.films[v].rating + data.films[v]
+          .description + '</div>';
+
+          if (modalcontent.innerHTML !== "")
+          {
+            var inputTime = document.querySelector('.inputTime');
+            var video = document.querySelector('.video');
+            var timer = document.querySelector('.timer');
+            var player = document.querySelector('.playerContainer');
+            var barHide = document.querySelector('.barPlayer');
+            var fullscreenCounter = 0;
+            var playButton = document.querySelector('.play-button');
+            var fullScreen = document.querySelector('.fullScreen');
+            var btnStop = document.querySelector('.stop-button');
+            var volume = document.querySelector('.video__slider');
+            var progress = document.querySelector('.progress')
+            var progressBar = document.querySelector('.progress_fill');
+            var toggle = document.querySelector('.toggle');
+
+            function mousemove() {
+              barHide.style.opacity = 1;
+              setTimeout(function() {
+                barHide.style.opacity = 0;
+              }, 5000);
+            }
+
+            function FullScreen() {
+              if (fullscreenCounter == 0) {
+                video.webkitRequestFullscreen();
+                fullscreenCounter = 1;
+              } else {
+                video.webkitExitFullscreen();
+                fullscreenCounter = 0;
+              }
+            }
+
+            function handleRangeUpdate() {
+              var value = this.value / 100;
+              video.volume = value;
+
+            };
+
+            inputTime.value = '0';
+          video.addEventListener('timeupdate', function() {
+            inputTime.value = video.currentTime / video.duration * 100;
+
+          });
+          inputTime.addEventListener('input', function() {
+            video.currentTime = inputTime.value * video.duration / 100;
+          });
+          video.addEventListener('loadeddata', function() {
+            timer.textContent = '0:00 /' + TimeConvert(video.duration)
+          });
+          timerLoop = setInterval(function() {
+            timer.textContent = TimeConvert(video.currentTime) + '/' + TimeConvert(video.duration)
+
+          }, 100)
+          player.addEventListener('mousemove', mousemove);
+          barHide.addEventListener('mousemove', mousemove);
+          fullScreen.addEventListener('click', FullScreen);
+          playButton.addEventListener('click', function() {
+            playButton.classList.toggle('paused');
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+
+          btnStop.addEventListener('click', function() {
+            if (video.paused === false) {
+              video.pause();
+              playButton.classList.remove('paused');
+            }
+
+            video.currentTime = 0;
+          });
+          volume.addEventListener('change', handleRangeUpdate);
+          volume.addEventListener('mousemove', handleRangeUpdate);
+          video.addEventListener('click', function() {
+            playButton.classList.toggle('paused');
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+          console.log(modalcontent.innerHTML);
+      }
+      };
+    }});
+   }
+
+box.forEach(function(els) {
+   els.addEventListener('click', function() {
+       modal.classList.remove('hidden');
+       console.log('Aaf');
+    });
+ });
+
+   overlay.addEventListener('click', function() {
+       modal.classList.add('hidden');
+  });
+
+
+  //MODAL FIN
+
+  // var barUp = document.querySelector('.barPlayer');
+  //  video.addEventListener('click', togglePlay);
+  // video.addEventListener('play', updateButton);
+  // video.addEventListener('pause', updateButton);
+
+
+  var TimeConvert = function(time) {
+    mins = Math.floor((time % 3600) / 60);
+    secs = Math.floor(time % 60);
+    if (secs < 10) {
+      secs = "0" + secs;
+    }
+    return mins + ':' + secs;
+  }
+
+
+  // video.addEventListener('mouseleave', function() {
+  //   barHide.style.opacity = "0";
+  // });
+  //
+  // video.addEventListener('mouseover', function() {
+  //   barHide.style.opacity = "1";
+  // });
+  // barHide.addEventListener('mouseleave', function() {
+  //   barHide.style.opacity = "0";
+  // });
+  //
+  // barHide.addEventListener('mouseover', function() {
+  //   barHide.style.opacity = "1";
+  //
+  // });
+
+
+
+
   </script>
+
 </body>
 
 </html>

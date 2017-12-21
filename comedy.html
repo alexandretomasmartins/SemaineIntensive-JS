@@ -34,10 +34,16 @@
   <div class="filmsContainer">
   </div>
 
+  <div class="modal hidden">
+    <div class="modal_overlay"></div>
+      <div class="modal_content">
+      </div>
+  </div>
+
   <footer>
     <p class="footerText">made with <span class="heart">&hearts;</span> by group 19</p>
   </footer>
-
+  <script src="js/lecteur.js"></script>
   <script>
     var films = document.querySelector('.filmsContainer');
     for (let index = 0; index < data.films.length; index++) {
@@ -128,7 +134,43 @@
       comedy.style.color = "#3DB39E";
       all.style.color = "white";
   });
+
+      // MODAL
+
+  var azerty = document.querySelectorAll('.box');
+  var tmpfilm = {};
+
+  for (let b = 0; b < azerty.length; b++) {
+      azerty[b].addEventListener('click', function (event){
+        console.log(event.target.attributes[0].value);
+        for (var v = 0; v < data.films.length; v++) {
+          if (event.target.attributes[0].value === data.films[v].img) {
+            tmpfilm = data.films[v]
+          }
+        }
+        console.log(tmpfilm);
+      })
+     }
+
+    var box = document.querySelectorAll('.box');
+    var modal = document.querySelector('.modal');
+    var overlay = document.querySelector('.modal_overlay');
+
+    box.forEach (function (els){
+    els.addEventListener('click', function() {
+        modal.classList.remove('hidden');
+        console.log('Aaf')
+     });
+
+    })
+
+     overlay.addEventListener('click', function() {
+         modal.classList.add('hidden');
+    });
+
+      // MODAL
   </script>
+
 </body>
 
 </html>
