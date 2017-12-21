@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style2.css">
   <title>Filmed</title>
   <script src="js/data.js" charset="utf-8"></script>
+  <script src="js/modal.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -18,21 +19,33 @@
       </div>
       <div class="member">
         <a class="accountLink" href="#">Account</a>
-        <a href="#">Subscribe</a>
+        <a class="subLink" href="#">Subscribe</a>
     </section>
     </div>
   </header>
 
-  <div class="filmsContainer">
+<div class="filterContainer">
+  <p class="filterTextAll secondFilter">All</p>
+  <p class="filterTextAnimation secondFilter">Animation</p>
+  <p class="filterTextHorror secondFilter">Horror</p>
+  <p class="filterTextAction secondFilter">Action</p>
+  <p class="filterTextComedy secondFilter">Comedy</p>
+</div>
 
+  <div class="filmsContainer">
   </div>
 
+  <footer>
+    <p class="footerText">made with <span class="heart">&hearts;</span> by group 19</p>
+  </footer>
+
   <script>
+
     var films = document.querySelector('.filmsContainer');
     for (let index = 0; index < data.films.length; index++) {
       var box = document.createElement('div');
       box.classList.add('box');
-      box.innerHTML += '<div class="boxDesc">' + '<h4 class="boxTitle">' + data.films[index].title + '</h4>' + '<p class="boxText">' + data.films[index].duration + '</p>' + '</div>';
+      box.innerHTML += '<div class="boxDesc">' + '<h4 class="boxTitle">' + data.films[index].title + '</h4>' + '<p class="boxText">' + data.films[index].duration + '</p>';
       var img = document.createElement('img');
       img.src = data.films[index].img
       img.classList.add('img');
@@ -43,7 +56,80 @@
       } else {
         box.style.display = 'none';
       }
-    }
+    };
+    var animation = document.querySelector('.filterTextAnimation');
+    animation.style.color = "#3DB39E";
+    var all = document.querySelector('.filterTextAll');
+    var action = document.querySelector('.filterTextAction');
+    var horror = document.querySelector('.filterTextHorror');
+    var comedy = document.querySelector('.filterTextComedy');
+    var divbox = document.querySelectorAll('.box');
+    all.addEventListener('click', function() {
+      for (var i = 0; i < divbox.length; i++) {
+        divbox[i].style.display = 'block';
+        animation.style.color = "white";
+        horror.style.color = "white";
+        action.style.color = "white";
+        comedy.style.color = "white";
+        all.style.color = "#3DB39E";
+      }
+      });
+      horror.addEventListener('click', function() {
+        for (var i = 0; i < divbox.length; i++) {
+          if (data.films[i].category === 'Horror') {
+            divbox[i].style.display = 'block';
+          } else {
+            divbox[i].style.display = 'none';
+          }
+          }
+          animation.style.color = "white";
+          horror.style.color = "#3DB39E";
+          action.style.color = "white";
+          comedy.style.color = "white";
+          all.style.color = "white";
+    });
+    animation.addEventListener('click', function() {
+      for (var i = 0; i < divbox.length; i++) {
+        if (data.films[i].category === 'Animation') {
+          divbox[i].style.display = 'block';
+        } else {
+          divbox[i].style.display = 'none';
+        }
+        }
+        animation.style.color = "#3DB39E";
+        horror.style.color = "white";
+        action.style.color = "white";
+        comedy.style.color = "white";
+        all.style.color = "white";
+  });
+  action.addEventListener('click', function() {
+    for (var i = 0; i < divbox.length; i++) {
+      if (data.films[i].category === 'Action') {
+        divbox[i].style.display = 'block';
+      } else {
+        divbox[i].style.display = 'none';
+      }
+      }
+      animation.style.color = "white";
+      horror.style.color = "white";
+      action.style.color = "#3DB39E";
+      comedy.style.color = "white";
+      all.style.color = "white";
+});
+  comedy.addEventListener('click', function() {
+    for (var i = 0; i < divbox.length; i++) {
+      if (data.films[i].category === 'Comedy') {
+        divbox[i].style.display = 'block';
+      } else {
+        divbox[i].style.display = 'none';
+      }
+      }
+      animation.style.color = "white";
+      horror.style.color = "white";
+      action.style.color = "white";
+      comedy.style.color = "#3DB39E";
+      all.style.color = "white";
+  });
   </script>
 </body>
 

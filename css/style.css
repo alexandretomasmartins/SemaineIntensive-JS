@@ -27,6 +27,9 @@ body {
   width: 100%;
   height: 82px;
   z-index: 99;
+  color: #3DB39E;
+  border-bottom: 2px solid;
+  position: fixed;
 }
 
 .mainLogoLink {
@@ -40,7 +43,7 @@ body {
 .member {
   width: 50%;
   text-align: right;
-  padding-right: 50px;
+  padding-right: 63px;
   font-family: 'advent_prolight';
   color: white;
   font-size: 30px;
@@ -50,10 +53,15 @@ body {
   margin-right: 20px;
 }
 
+.accountLink:hover {
+  color: #3DB39E;
+}
+
 .categoryContainer {
   display: flex;
   width: 100%;
   text-align: center;
+  padding-top: 45px;
 }
 
 .categoryTitle {
@@ -144,28 +152,7 @@ body {
   position: absolute;
 }
 
-.opacityHoverAnimation {
-  width: 25%;
-  position: relative;
-  z-index: 50;
-  transition: all 1s;
-}
-
-.opacityHoverHorror {
-  width: 25%;
-  position: relative;
-  z-index: 50;
-  transition: all 1s;
-}
-
-.opacityHoverAction {
-  width: 25%;
-  position: relative;
-  z-index: 50;
-  transition: all 1s;
-}
-
-.opacityHoverComedy {
+.opacityHoverAnimation, .opacityHoverHorror, .opacityHoverAction, .opacityHoverComedy {
   width: 25%;
   position: relative;
   z-index: 50;
@@ -175,25 +162,25 @@ body {
 .opacityHoverAnimation:hover {
   position: relative;
   transition: 0.7s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .opacityHoverHorror:hover {
   position: relative;
   transition: 0.7s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .opacityHoverAction:hover {
   position: relative;
   transition: 0.7s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .opacityHoverComedy:hover {
   position: relative;
   transition: 0.7s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .box {
@@ -207,6 +194,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.img:hover {
+  opacity: 0.7;
 }
 
 .filmsContainer {
@@ -215,7 +208,6 @@ body {
   justify-content: space-between;
   padding-left: 63px;
   padding-right: 63px;
-  padding-top: 98px;
 }
 
 .boxTitle {
@@ -235,4 +227,75 @@ body {
 .boxDesc {
   display: flex;
   justify-content: space-between;
+}
+
+.filterTextHorror {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextAll {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+}
+
+.filterTextAnimation {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextAction {
+  margin-left: 10px;
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+}
+
+.filterTextComedy {
+  color: white;
+  font-family: 'advent_prolight';
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filterTextSelected {
+  color: #3DB39E;
+  width: 75px;
+  font-family: 'advent_prolight';
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 63px;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.subLink {
+  color: white;
+}
+
+.subLink:hover {
+  color: #3DB39E;
+}
+
+.footerText {
+  font-family: 'advent_prolight';
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+  font-size: 20px;
 }

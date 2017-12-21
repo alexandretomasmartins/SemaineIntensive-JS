@@ -55,7 +55,7 @@ var data = {
         img: 'img/action/narutodanceofwar.jpg'
     }, {
         src: 'NARUTO+-+New+Movie+2018+-+Full+Trailer+AMAZING!!(720p).mp4',
-        title: 'NARUTO - New Movie 2018',
+        title: 'Naruto fan trailer 2018',
         duration: '12:50',
         author: 'RivenX3i',
         author_url: 'https://www.youtube.com/channel/UC-Op8pOVwbeqp6lyL2xJvqQ',
@@ -68,7 +68,7 @@ var data = {
         img: 'img/action/narutonewfilm.jpg'
     }, {
         src: 'Naruto+The+Movie!+(Official+Fake+Trailer)(720p).mp4',
-        title: 'Naruto The Movie!',
+        title: 'Naruto, The Movie!',
         duration: '3:15',
         author: 'nigahiga',
         author_url: 'https://www.youtube.com/channel/UCSAUGyc_xA8uYzaIVG6MESQ',
@@ -81,7 +81,7 @@ var data = {
         img: 'img/comedy/narutothemovie.jpg'
     }, {
         src: 'Red+Hood_+The+Fallen+-+DC+Comic+Batman+Fan+Film(720p).mp4',
-        title: 'Red Hood: The Fallen - DC Comic Batman Fan Film',
+        title: 'Red Hood: The Fallen',
         duration: '23:16',
         author: 'Toby Bajrovic',
         author_url: 'https://www.youtube.com/channel/UCjGUxyIEtqh_CyWBIVIhzng',
@@ -133,7 +133,7 @@ var data = {
         img: 'img/comedy/theflashlite.jpg'
     }, {
         src: 'Clash+at+the+Cantina+(2014)+-+Star+Wars+Fan+Film(720p).mp4',
-        title: 'Clash at the Cantina - Star Wars Fan Film',
+        title: 'Clash at the Cantina',
         duration: '4:45',
         author: 'Corey Vidal',
         author_url: 'https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g',
@@ -159,7 +159,7 @@ var data = {
         img: 'img/comedy/the74hungergames.jpg'
     }, {
         src: 'VICTIM+-+A+Short+Slender+Man+Horror+Film(720p).mp4',
-        title: 'VICTIM - A Short Slender Man Horror Film',
+        title: 'VICTIM',
         duration: '14:30',
         author: 'Eddie Adamson',
         author_url: 'https://www.youtube.com/channel/UCpWweEWZIfalXgKS1xO2RDw',
@@ -171,8 +171,8 @@ var data = {
         category: 'Horror',
         img: 'img/horror/victim.jpg'
     }, {
-        src: 'DON&#039;T+MOVE+-+A+Short+Horror+Film+(2017)(720p).mp4',
-        title: 'FALLOUT - Apocalyptic Thriller Short Film',
+        src: 'T+MOVE+-+A+Short+Horror+Film+(2017)(720p).mp4',
+        title: 'FALLOUT',
         duration: '7:27',
         author: 'AndrewProductionsTV',
         author_url: 'https://www.youtube.com/channel/UCOAHgaVjyUjFtxhgCAQ_vAg',
@@ -211,7 +211,7 @@ var data = {
         img: 'img/animation/Attackontitan.jpg'
     }, {
         src: 'Chinese+teenager+created+awesome+fight+scene+animation(536p).mp4',
-        title: 'Personal Animated Short 【Heat vs Repulsion】',
+        title: 'Personal Animated Short',
         duration: '3:50',
         author: 'magnil',
         author_url: 'https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g',
@@ -248,5 +248,6 @@ var data = {
         rating: 4,
         category: 'Action',
         img: 'img/action/madara.jpg'
-    }, ]
+    },
+    ]
 };
